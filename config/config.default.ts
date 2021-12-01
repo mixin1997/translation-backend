@@ -19,6 +19,22 @@ export default (appInfo: EggAppInfo) => {
     url: 'mongodb://localhost:27017/translation',
   };
 
+  config.swaggerdoc = {
+    dirScanner: './app/controller',
+    apiInfo: {
+      title: '翻译管理系统API文档',
+      description: 'swagger-ui for egg',
+      version: '1.0.0',
+    },
+    schemes: ['http', 'https'],
+    consumes: ['application/json'],
+    produces: ['application/json'],
+    enableSecurity: false,
+    // enableValidate: true,
+    routerMap: false,
+    enable: true,
+  };
+
   // the return config will combines to EggAppConfig
   return {
     ...config,

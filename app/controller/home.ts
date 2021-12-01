@@ -1,5 +1,7 @@
 import { Controller } from 'egg';
-
+/**
+ * @Controller home
+ */
 export default class HomeController extends Controller {
   public async index() {
     const { ctx } = this;
