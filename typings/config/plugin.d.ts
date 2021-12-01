@@ -15,7 +15,6 @@ import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
 import 'egg-mongoose';
-import 'egg-swagger-doc';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
