@@ -6,8 +6,8 @@ import BaseController from './base';
 export default class UserController extends BaseController {
   // 注册用户
   public async registerUser() {
-    const { username, password } = this.ctx.request.query;
-    console.log('this.ctx.request', this.ctx.request.query.username);
+    // const { username, password } = this.ctx.request.query;
+    // console.log('this.ctx.request', this.ctx.request.query.username);
     this.responseData({});
     // 注册用户
   }

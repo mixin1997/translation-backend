@@ -14,3 +14,17 @@ export class PagePostDto {
   @Expose()
   page: number;
 }
+
+export class PageGetDto {
+  @IsOptional()
+  @IsInt()
+  @Min(0)
+  @Expose()
+  limit: number;
+
+  @IsOptional()
+  @IsInt()
+  @Min(1)
+  @Expose()
+  page: number;
+}
