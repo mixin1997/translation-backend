@@ -17,4 +17,12 @@ export default class UserController extends BaseController {
     this.responseData({ data: ['121212'] });
     // 用户登录
   }
+
+  /**
+   * 新增用户
+   */
+  public async addUser() {
+    await this.service.user.add();
+    this.responseData({ data: '新增用户成功1！' });
+  }
 }

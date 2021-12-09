@@ -7,4 +7,8 @@ export default class User extends Service {
     // this.ctx.model.User.insertMany();
     // await
   }
+
+  async add() {
+    this.ctx.model.User.insertMany([{ name: 'mixin', email: 'mixin@yolanda.hk', phone: 15798089155 }]);
+  }
 }
